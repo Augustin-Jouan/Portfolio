@@ -12,27 +12,58 @@
 <body class="m-0 p-0 font-[Outfit] text-white text-2xl ">
 
     <header class = "fixed top-0 items-center">
-        <nav class = "flex justify-left text-center my-2 items-center bg-[#8ddcdc] rounded-full">
-            <a href = "#welcome" class = "m-2">Welcome</a>
-            <a href = "#bio" class = "m-2">Bio</a>
-            <a href = "#projects" class = "m-2">Projects</a>
+        <nav class = "flex justify-left text-center my-2 items-center  rounded">
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2" href = "#welcome" class = "m-2">Welcome</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2" href = "#bio" class = "m-2">Bio</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2" href = "#projects" class = "m-2">Projects</a>
         </nav>
     </header>
     <main>
         <section class = "flex flex-col h-screen w-20 justify-center items-center fixed right-0 rounded">
             
-            <button id = "btn" class = "shadow-2xl flex flex-col h-1/3 w-2/3 bg-[#8ddcdc] items-center justify-center my-2 rounded-full whitespace-nowrap">
+            <button id = "btn" class = "shadow-2xl flex flex-col h-1/3 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap">
                 <p class = "rotate-90 text-center">Contact Me !!</p>
             </button> 
 
-            <button class = "shadow-2xl w-2/3 bg-[#8ddcdc] rounded-full flex flex-row h-2/3 items-center justify-center my-2"> 
+            <button class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-2/3 items-center justify-center my-2"> 
                 <p class = "rotate-90">Links...</p>
             </button>
 
         </section>
 
-        <aside id = "form" class = "shadow-2xl flex flex-col h-4/5 w-4/5 justify-center items-center fixed right-20 top-1/2 -translate-y-1/2 translate-x-[calc(100%+5rem)] rounded bg-[#8ddcdc] transition-transform duration-500 ease-in-out">
-            <p class = "text-5xl">FORM</p>
+        <aside id = "form" class = "shadow-m flex flex-row h-4/5 w-4/5 justify-center items-center fixed right-20 top-1/2 -translate-y-1/2 translate-x-[calc(100%+5rem)] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
+            
+            <img class = "flex flex-col w-1/2 h-full rounded-l" src = "img/foretJour.png">
+            
+            <form action="mailto:augustin.jouan@epitech.eu" method="post" enctype="text/plain" class = "flex flex-col w-1/2 h-full justify-center">
+                
+                <section class = "flex flex-row h-1/3 justify-center items-center">
+                    <h1 class = "text-center text-3xl">Please feel free to contact me! I will be happy to respond.</h1>
+                </section>
+
+                <section class = "flex flex-col h-2/3 items-center">
+                    <div class="m-4 ml-4">
+                        <input class = 'rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-50 placeholder:text-[#A7C7E7]' placeholder="Your First name" type="text" id="first_name" name="first_name" required>
+                    </div>
+
+                    <div class="m-4 ml-4">
+                        <input class = 'rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-50 placeholder:text-[#A7C7E7]' placeholder="Your name" type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="m-4 ml-4">
+                        <input class = 'rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-50 placeholder:text-[#A7C7E7]' placeholder="Your email" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="m-4 ml-4">
+                        <textarea class = 'rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-50 placeholder:text-[#A7C7E7]' placeholder="Your message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button class="m-4 w-1/2 bg-white text-[#A7C7E7] rounded" type="submit">
+                        Send !
+                    </button>
+                </section>
+            </form>
+                
         </aside> 
 
         <section id = "welcome" class = "flex items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
