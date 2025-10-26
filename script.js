@@ -8,30 +8,23 @@ btn.addEventListener("click", () => {
 
 })
 
-// <!-- js pour le "en savoir plus" de mes card bio -->
+// ici je gère les botons pour afficher/enlever les grandes cartes
+const expandButtons = document.querySelectorAll('.expand-btn');
+const backButtons = document.querySelectorAll('.back-btn');
+const smallCards = document.querySelectorAll('.card');
+const bigCards = document.querySelectorAll('.big-card');
 
-const buttons = document.querySelectorAll('.expand-btn');
-const cards = document.querySelectorAll('.card');
+expandButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+    smallCards.forEach(c => c.classList.add('hidden')); // cache toutes les petites
+    document.getElementById(`big-${target}`).classList.remove('hidden'); // montre la bonne grande
+  });
+});
 
-buttons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        const card = cards[index];
-        const isExpanded = btn.textContent === "Retour";
-
-        if (!isExpanded) {
-            cards.forEach((c, i) => {
-            if (i !== index) {
-                c.style.display = 'none';
-            }
-            });
-            card.classList.add('col-span-1', 'sm:col-span-2', 'lg:col-span-3');
-            btn.textContent = "Retour"; 
-        } else {
-            cards.forEach((c) => {
-            c.style.display = 'block'; 
-            c.classList.remove('col-span-1', 'sm:col-span-2', 'lg:col-span-3'); 
-            });
-            btn.textContent = "En savoir plus";
-        }
-    });
+backButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    bigCards.forEach(c => c.classList.add('hidden')); // cache toutes les grandes
+    smallCards.forEach(c => c.classList.remove('hidden')); // réaffiche les petites
+  });
 });

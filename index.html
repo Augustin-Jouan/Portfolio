@@ -15,8 +15,8 @@
 
     <header class = "fixed top-0">
         <nav class = "flex my-2 items-center  rounded">
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#welcome">Welcome</a>
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#bio">Bio</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#welcome">Bienvenue</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#bio">Mon Parcour</a>
             <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#projects">Projects</a>
         </nav>
     </header>
@@ -77,61 +77,110 @@
             <p class = "text-5xl text-center text-[#5b8065] m-4 w-1/2"> Welcome to the Portfolio of Augustin JOUAN</p>
         </section>
 
-        <!-- card sur mon parcour-->
+        <!--mon parcour-->
 
         <section id="bio" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 bg-[#ff8b84] h-screen overflow-auto">
 
-            <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Licence MIASHS — Université de Rennes</h2>
-                <p class="mt-1 text-sm text-[#f9e4b7] text-center">2021–2025</p>
-                <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Formation pluridisciplinaire alliant informatique, mathématiques et sciences humaines.
-                </p>
-                <div class="mt-4 text-center">
-                    <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
-                        En savoir plus
-                    </button>
-                </div>
-            </div>
+        <!-- les cards en format petit -->
 
-            <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Séjour en Irlande</h2>
-                <p class="mt-1 text-sm text-[#f9e4b7] text-center">6 mois</p>
-                <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Immersion culturelle et perfectionnement de l’anglais au sein d’un temple bouddhiste.
-                </p>
-                <div class="mt-4 text-center">
-                    <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
-                        En savoir plus
-                    </button>
-                </div>
+        <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
+            <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Licence MIASHS — Université de Rennes</h2>
+            <p class="mt-1 text-sm text-[#f9e4b7] text-center">2021–2025</p>
+            <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">Formation pluridisciplinaire alliant informatique, mathématiques et sciences humaines.</p>
+            <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition" data-target="licence">
+                En savoir plus
+            </button>
             </div>
+        </div>
 
-            <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Pré-MSc à Epitech — Rennes</h2>
-                <p class="mt-1 text-sm text-[#f9e4b7] text-center">2025-2028</p>
-                <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Année préparatoire au Master of Science, spécialité IA et Cybersécurité.
-                </p>
-                <div class="mt-4 text-center">
-                    <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
-                        En savoir plus
-                    </button>
-                </div>
+        <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
+            <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Séjour en Irlande</h2>
+            <p class="mt-1 text-sm text-[#f9e4b7] text-center">6 mois</p>
+            <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">Immersion culturelle et perfectionnement de l’anglais au sein d’un temple bouddhiste.</p>
+            <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition" data-target="irlande">
+                En savoir plus
+            </button>
             </div>
+        </div>
 
-            <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Expériences professionnelles</h2>
-                <p class="mt-1 text-sm text-[#f9e4b7] text-center">Divers</p>
-                <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Du service à la logistique.
-                </p>
-                <div class="mt-4 text-center">
-                    <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
-                        En savoir plus
-                    </button>
-                </div>
+        <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
+            <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Pré-MSc à Epitech — Rennes</h2>
+            <p class="mt-1 text-sm text-[#f9e4b7] text-center">2025–2028</p>
+            <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">Année préparatoire au Master of Science, spécialité IA et Cybersécurité.</p>
+            <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition" data-target="epitech">
+                En savoir plus
+            </button>
             </div>
+        </div>
+
+        <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
+            <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Expériences professionnelles</h2>
+            <p class="mt-1 text-sm text-[#f9e4b7] text-center">Divers</p>
+            <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">Du service à la logistique.</p>
+            <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition" data-target="jobs">
+                En savoir plus
+            </button>
+            </div>
+        </div>
+
+
+        <!-- les card en agrandit -->
+
+        <div id="big-licence" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
+            <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Licence MIASHS — Université de Rennes</h2>
+            <p class="text-[#f9e4b7] text-center leading-relaxed">
+            Études en mathématiques appliquées et sciences humaines et sociales, avec une forte composante informatique.<br>
+            Cours principaux : Python, R, Machine Learning, SQL, analyse, algèbre, probabilités, statistiques inférentielles et optimisation.
+            </p>
+            <div class="mt-6 text-center">
+            <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="licence">
+                Retour
+            </button>
+            </div>
+        </div>
+
+        <div id="big-irlande" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
+            <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Séjour en Irlande</h2>
+            <p class="text-[#f9e4b7] text-center leading-relaxed">
+            Immersion complète au sein d’un temple bouddhiste tibétain (Jampa Ling, Cavan).<br>
+            Bénévolat, vie communautaire et amélioration significative de l’anglais à l’oral comme à l’écrit.
+            </p>
+            <div class="mt-6 text-center">
+            <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="irlande">
+                Retour
+            </button>
+            </div>
+        </div>
+
+        <div id="big-epitech" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
+            <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Pré-MSc à Epitech — Rennes</h2>
+            <p class="text-[#f9e4b7] text-center leading-relaxed">
+            Année préparatoire au Master of Science (spécialité IA & Cybersécurité).<br>
+            Développement de compétences en algorithmique, sécurité et projets collaboratifs.
+            </p>
+            <div class="mt-6 text-center">
+            <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="epitech">
+                Retour
+            </button>
+            </div>
+        </div>
+
+        <div id="big-jobs" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
+            <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Expériences professionnelles</h2>
+            <p class="text-[#f9e4b7] text-center leading-relaxed">
+            J’ai travaillé dans divers environnements — hôtellerie, logistique, restauration, et grande distribution.<br>
+            Ces expériences m’ont apporté rigueur, autonomie et sens du service.
+            </p>
+            <div class="mt-6 text-center">
+            <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="jobs">
+                Retour
+            </button>
+            </div>
+        </div>
 
         </section>
 
