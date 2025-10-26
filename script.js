@@ -4,7 +4,15 @@
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
 btn.addEventListener("click", () => {
-    form.classList.toggle('translate-x-[calc(100%+5rem)]');
+    form.classList.toggle('translate-x-[120%]');
+
+})
+
+// <!-- js pour l'apparition des liens resaux -->
+const btn2 = document.getElementById("btn2");
+const link = document.getElementById("links");
+btn2.addEventListener("click", () => {
+    link.classList.toggle('translate-y-[120%]');
 
 })
 

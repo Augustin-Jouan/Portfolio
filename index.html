@@ -29,7 +29,7 @@
             <button id = "btn" class = "shadow-2xl flex flex-col h-1/2 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap bg-opacity-70">
                 <p class = "rotate-90 text-center">Contactez-moi</p>
             </button> 
-            <button class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-1/3 items-center justify-center my-2 bg-opacity-70"> 
+            <button id ="btn2" class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-1/3 items-center justify-center my-2 bg-opacity-70"> 
                 <p class = "rotate-90">Links...</p>
             </button>
 
@@ -37,7 +37,7 @@
         
         <!-- mon form pour me contacter -->
 
-        <aside id = "form" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row h-[80vh] w-4/5 fixed right-20 top-1/2 -translate-y-1/2 translate-x-[calc(100%+5rem)] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
+        <aside id = "form" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row h-[80vh] w-4/5 fixed right-20 top-20 translate-x-[120%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
             
             <img class="hidden md:block h-full w-full md:max-w-[50%] md:min-w-[400px] object-cover rounded-l" src="img/foretJour.png" alt="forest">
 
@@ -50,19 +50,19 @@
 
                 <section class = "flex flex-col gap-4">
                     <div class="m-2">
-                        <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Your First name" type="text" id="first_name" name="first_name" required>
+                        <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Prénom" type="text" id="first_name" name="first_name" required>
                     </div>
                     <div class="m-2">
-                        <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Your name" type="text" id="name" name="name" required>
+                        <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Nom" type="text" id="name" name="name" required>
                     </div>
                     <div class="m-2">
-                        <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Your email" type="email" id="email" name="email" required>
+                        <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Email" type="email" id="email" name="email" required>
                     </div>
                     <div class="m-2">
-                        <textarea class = 'w-full p-2 rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Your message" name="message" rows="4" required></textarea>
+                        <textarea class = 'w-full p-2 rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Message" name="message" rows="4" required></textarea>
                     </div>
                     <button class="w-full p-2 shadow-2xl w-1/2 bg-white text-[#A7C7E7] rounded" type="submit">
-                        Send !
+                        Envoyer !
                     </button>
                 </section>
 
@@ -70,11 +70,15 @@
                 
         </aside> 
 
+        <aside id = "links" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row h-[80vh] w-4/5 fixed right-20 top-20 translate-y-[120%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
+            <p>yoo</p>
+        </aside> 
+
         <!-- photo de moi + hook -->
 
         <section id = "welcome" class = "flex flex-col md:flex-row items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
             <div>
-                <img class="rounded-full mr-20 mt-20" src="img/Picture_of_me.png" alt="forest" width="300px" height="300px">
+                <img class="rounded-full md:ml-10 mr-20 mt-20" src="img/Picture_of_me.png" alt="forest" width="300px" height="300px">
             </div>
             <div class = "mr-20">
                 <p class = "text-5xl text-center text-[#5b8065] m-4">Augustin JOUAN</p>
