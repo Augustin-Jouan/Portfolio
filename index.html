@@ -13,8 +13,8 @@
 
     <!-- boutons de nav bienvenue/bio/projets -->
 
-    <header class = "fixed top-0">
-        <nav class = "flex my-2 items-center  rounded">
+    <header class = "fixed top-0 z-50">
+        <nav class = "flex my-2 items-center rounded">
             <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#welcome">Bienvenue</a>
             <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#bio">Mon Parcours</a>
             <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#projects">Mes projets</a>
@@ -24,7 +24,7 @@
     <main>
 
         <!-- boutons du cotés droit: form et mes liens -->
-        <section class = "flex flex-col h-screen w-20 justify-center items-center fixed right-0 rounded  mb-10">
+        <section class = "flex flex-col h-screen w-20 justify-center items-center fixed right-0 rounded  mb-10 z-50">
             
             <button id = "btn" class = "shadow-2xl flex flex-col h-1/2 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap bg-opacity-70">
                 <p class = "rotate-90 text-center">Contactez-moi</p>
@@ -37,7 +37,7 @@
         
         <!-- mon form pour me contacter -->
 
-        <aside id = "form" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row md:h-[80vh] h-[70vh] w-[75%] fixed left-10 top-20 translate-x-[140%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
+        <aside id = "form" class = " z-50 items-stretch shadow-md flex flex-col-reverse md:flex-row md:h-[80vh] h-[70vh] w-[75%] fixed left-10 top-20 translate-x-[140%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
             
             <img class="hidden md:block h-full w-full md:max-w-[50%] md:min-w-[400px] object-cover rounded-l" src="img/foretJour.png" alt="forest">
 
@@ -72,7 +72,7 @@
 
         <!-- mes liens pour me contacter -->
 
-        <aside id="links" class="items-center flex shadow-md  flex-row md:flex-col justify-center gap-6 md:h-[80vh] w-[80%] md:w-[15%] fixed md:right-20 md:top-20 bottom-10 md:left-auto left-5 translate-y-[130%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out p-4">
+        <aside id="links" class="z-50 items-center flex shadow-md  flex-row md:flex-col justify-center gap-6 md:h-[80vh] w-[80%] md:w-[15%] fixed md:right-20 md:top-20 bottom-10 md:left-auto left-5 translate-y-[130%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out p-4">
 
             <a href="https://github.com/tonprofil" class="hover:scale-110 transition-transform bg-[#A7C7E7]">
                 <img src="img/github.png" alt="GitHub" class="w-20 h-20 object-contain">
@@ -222,7 +222,7 @@
         </section>
 
         <!-- MES PROJETS -->
-        <section id="projects" class="relative bg-[#5b8065] h-screen p-6 flex flex-col items-center justify-center">
+        <section id="projects" class=" overflow-auto bg-[#5b8065] h-screen p-6 flex flex-col items-center justify-center">
 
         <!-- petites cards -->
             <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full h-2/3">
