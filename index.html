@@ -37,7 +37,7 @@
         
         <!-- mon form pour me contacter -->
 
-        <aside id = "form" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row h-[80vh] w-4/5 fixed right-20 top-20 translate-x-[120%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
+        <aside id = "form" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row md:h-[80vh] h-[70vh] w-[75%] fixed left-10 top-20 translate-x-[140%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
             
             <img class="hidden md:block h-full w-full md:max-w-[50%] md:min-w-[400px] object-cover rounded-l" src="img/foretJour.png" alt="forest">
 
@@ -70,13 +70,31 @@
                 
         </aside> 
 
-        <aside id = "links" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row h-[80vh] w-4/5 fixed right-20 top-20 translate-y-[120%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
-            <p>yoo</p>
-        </aside> 
+        <!-- mes liens pour me contacter -->
+
+        <aside id="links" class="items-center flex shadow-md  flex-row md:flex-col justify-center gap-6 md:h-[80vh] w-[80%] md:w-[15%] fixed md:right-20 md:top-20 bottom-10 md:left-auto left-5 translate-y-[130%] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out p-4">
+
+            <a href="https://github.com/tonprofil" class="hover:scale-110 transition-transform bg-[#A7C7E7]">
+                <img src="img/github.png" alt="GitHub" class="w-20 h-20 object-contain">
+            </a>
+
+            <a href="https://linkedin.com/in/tonprofil" class="hover:scale-110 transition-transform bg-white rounded-full">
+                <img src="img/lk.png" alt="LinkedIn" class="w-20 h-20 object-contain">
+            </a>
+
+            <a href="mailto:augustin.jouan@epitech.eu" class="hover:scale-110 transition-transform rounded-full bg-[#A7C7E7]">
+                <img src="img/email.jpg" alt="Mail" class="w-20 h-20 object-contain">
+            </a>
+
+            <a href="tel:+33123456789" class="hover:scale-110 transition-transform rounded-full">
+                <img src="img/phone.jpg" alt="Téléphone" class="w-20 h-20 object-contain">
+            </a>
+
+        </aside>
 
         <!-- photo de moi + hook -->
 
-        <section id = "welcome" class = "flex flex-col md:flex-row items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
+        <section id = "welcome" class = "flex flex-col md:flex-row items-center justify-center h-screen  bg-[#f9e4b7] w-screen overflow-auto">
             <div>
                 <img class="rounded-full md:ml-10 mr-20 mt-20" src="img/Picture_of_me.png" alt="forest" width="300px" height="300px">
             </div>
@@ -205,8 +223,35 @@
 
         <!-- mes projets -->
 
-        <section id = "projects" class = "flex items-center justify-center h-screen bg-[#5b8065] w-screen">
-            <p class = "text-5xl text-[#ff8b84]"> Projects </p>
+        <section id="projects" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-[#5b8065] min-h-screen overflow-auto">
+
+        <!-- petites descriptions -->
+        <div class="project-card p-4 m-4 rounded-xl border border-[#ff8b84] shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
+            <h2 class="mt-4 text-xl text-[#ff8b84] text-center">Projet IA - Chatbot</h2>
+            <p class="mt-2 text-[#ff8b84] text-center line-clamp-3">
+            Développement d'un chatbot intelligent capable de répondre à des questions sur un domaine spécifique.
+            </p>
+            <div class="mt-4 text-center">
+            <button class="project-btn inline-block px-4 py-2 bg-[#ff8b84]/50 text-[#5b8065] rounded-lg hover:bg-[#ff8b84]/70 transition" data-target="chatbot">
+                En savoir plus
+            </button>
+            </div>
+        </div>
+
+        <!-- toute la description -->
+        <div id="big-chatbot" class="big-project hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-1 sm:col-span-2 lg:col-span-3">
+            <h2 class="text-2xl text-[#ff8b84] font-semibold text-center mb-2">Projet IA - Chatbot</h2>
+            <p class="text-[#f9e4b7] text-center leading-relaxed">
+            Ce projet consistait à créer un chatbot capable de comprendre des requêtes en langage naturel, d'y répondre correctement, et de s'améliorer grâce à l'apprentissage supervisé.  
+            J'y ai développé mes compétences en Python, NLP, et gestion de base de données, et appris à concevoir une interface simple mais efficace pour l'utilisateur final.
+            </p>
+            <div class="mt-6 text-center">
+            <button class="back-project inline-block px-6 py-2 bg-[#ff8b84]/80 text-[#5b8065] rounded-lg hover:bg-[#ff8b84]/60 transition" data-target="chatbot">
+                Retour
+            </button>
+            </div>
+        </div>
+
         </section>
 
     </main>
