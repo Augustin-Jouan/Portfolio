@@ -13,36 +13,36 @@
 
     <header class = "fixed top-0">
         <nav class = "flex my-2 items-center  rounded">
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2" href = "#welcome">Welcome</a>
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2" href = "#bio">Bio</a>
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2" href = "#projects">Projects</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#welcome">Welcome</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#bio">Bio</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#projects">Projects</a>
         </nav>
     </header>
 
     <main>
         <section class = "flex flex-col h-screen w-20 justify-center items-center fixed right-0 rounded">
             
-            <button id = "btn" class = "shadow-2xl flex flex-col h-1/3 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap">
+            <button id = "btn" class = "shadow-2xl flex flex-col h-1/3 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap bg-opacity-70">
                 <p class = "rotate-90 text-center">Contact Me !!</p>
             </button> 
-            <button class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-2/3 items-center justify-center my-2"> 
+            <button class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-2/3 items-center justify-center my-2 bg-opacity-70"> 
                 <p class = "rotate-90">Links...</p>
             </button>
 
         </section>
 
-        <aside id = "form" class = "overflow-auto items-stretch shadow-md flex flex-col-reverse md:flex-row h-4/5 w-4/5 fixed right-20 top-1/2 -translate-y-1/2 translate-x-[calc(100%+5rem)] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
+        <aside id = "form" class = "items-stretch shadow-md flex flex-col-reverse md:flex-row h-[80vh] w-4/5 fixed right-20 top-1/2 -translate-y-1/2 translate-x-[calc(100%+5rem)] rounded bg-[#A7C7E7] transition-transform duration-500 ease-in-out">
             
             <img class="hidden md:block h-full w-full md:max-w-[50%] md:min-w-[400px] object-cover rounded-l" src="img/foretJour.png" alt="forest">
 
             
-            <form action="mailto:augustin.jouan@epitech.eu" method="post" enctype="text/plain" class = "relative flex flex-col w-full p-4 md:rounded-r bg-cover bg-center bg-[url('img/foretJour.png')] md:bg-none">
+            <form action="mailto:augustin.jouan@epitech.eu" method="post" enctype="text/plain" class = " flex-1 overflow-auto relative flex flex-col w-full p-4 md:rounded-r bg-cover bg-center bg-[url('img/foretJour.png')] md:bg-none">
                 
-                <section class = "flex flex-row items-center h-1/3">
+                <section class = "flex flex-row items-center mb-4">
                     <h1 class = "text-center text-3xl">Please feel free to contact me! I will be happy to respond.</h1>
                 </section>
 
-                <section class = "flex flex-col h-2/3 justify-around">
+                <section class = "flex flex-col gap-4">
                     <div class="m-2">
                         <input class = 'w-full p-2 text-center rounded bg-white text-[#A7C7E7] placeholder:italic placeholder:text-center placeholder:opacity-80 placeholder:text-[#A7C7E7]' placeholder="Your First name" type="text" id="first_name" name="first_name" required>
                     </div>
@@ -64,12 +64,67 @@
                 
         </aside> 
 
-        <section id = "welcome" class = "flex items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
-            <p class = "text-5xl text-[#5b8065]"> Welcome </p>
+        <section id = "welcome" class = "flex flex-row items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
+            <img class="rounded-full m-4" src="img/Picture_of_me.png" alt="forest" width="300px" height="300px">
+            <p class = "text-5xl text-center text-[#5b8065] m-4 w-1/2"> Welcome to the Portfolio of Augustin JOUAN</p>
         </section>
-        <section id = "bio" class = "flex items-center justify-center h-screen bg-[#ff8b84] w-screen">
-            <p class = "text-5xl text-[#f9e4b7]"> Bio </p>
-        </section>
+
+        <section id="bio" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-[#ff8b84] h-screen overflow-auto">
+
+    <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
+        <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Licence MIASHS</h2>
+        <p class="mt-1 text-sm text-[#f9e4b7] text-center">2022-2025</p>
+        <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
+        Formation académique pluridisciplinaire en mathématiques et sciences humaines et sociales.
+        </p>
+        <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
+                En savoir plus
+            </button>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
+        <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Séjour en Irlande</h2>
+        <p class="mt-1 text-sm text-[#f9e4b7] text-center">6 mois</p>
+        <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
+        Expérience internationale et immersion culturelle pour améliorer l’anglais et découvrir de nouvelles perspectives.
+        </p>
+        <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
+                En savoir plus
+            </button>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
+        <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Pré-MSc à Epitech</h2>
+        <p class="mt-1 text-sm text-[#f9e4b7] text-center">2025</p>
+        <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
+        Préparation intensive au Master of Science, approfondissement des compétences techniques et logiques.
+        </p>
+        <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
+                En savoir plus
+            </button>
+        </div>
+    </div>
+
+    <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
+        <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Petits boulots</h2>
+        <p class="mt-1 text-sm text-[#f9e4b7] text-center">Divers</p>
+        <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
+        Expériences variées dans le service, l’animation et le soutien scolaire.
+        </p>
+        <div class="mt-4 text-center">
+            <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
+                En savoir plus
+            </button>
+        </div>
+    </div>
+
+    </section>
+
         <section id = "projects" class = "flex items-center justify-center h-screen bg-[#5b8065] w-screen">
             <p class = "text-5xl text-[#ff8b84]"> Projects </p>
         </section>
@@ -80,6 +135,8 @@
         <p class = "text-center text-xs">© 2025 by Augustin JOUAN</p>
     </footer>
 
+
+<!-- js pour l'apparition du form -->
 <script>
     const btn = document.getElementById("btn");
     const form = document.getElementById("form");
@@ -87,6 +144,25 @@
         form.classList.toggle('translate-x-[calc(100%+5rem)]');
 
     })
+</script>
+
+<!-- js pour le en savoir plus de mes card bio -->
+<script>
+  const buttons = document.querySelectorAll('.expand-btn');
+  const cards = document.querySelectorAll('.card');
+
+  buttons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      cards.forEach((card, i) => {
+        if(i !== index) {
+          card.style.display = 'none'; 
+        } else {
+          card.classList.add('col-span-1', 'sm:col-span-2', 'lg:col-span-3');
+          card.style.transition = 'all 0.5s ease';
+        }
+      });
+    });
+  });
 </script>
 
 </body>
