@@ -82,10 +82,10 @@
         <section id="bio" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 bg-[#ff8b84] h-screen overflow-auto">
 
             <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Licence MIASHS</h2>
-                <p class="mt-1 text-sm text-[#f9e4b7] text-center">2022-2025</p>
+                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Licence MIASHS — Université de Rennes</h2>
+                <p class="mt-1 text-sm text-[#f9e4b7] text-center">2021–2025</p>
                 <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Formation académique pluridisciplinaire en mathématiques et sciences humaines et sociales.
+                Formation pluridisciplinaire alliant informatique, mathématiques et sciences humaines.
                 </p>
                 <div class="mt-4 text-center">
                     <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
@@ -98,7 +98,7 @@
                 <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Séjour en Irlande</h2>
                 <p class="mt-1 text-sm text-[#f9e4b7] text-center">6 mois</p>
                 <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Expérience internationale et immersion culturelle pour améliorer l’anglais et découvrir de nouvelles perspectives.
+                Immersion culturelle et perfectionnement de l’anglais au sein d’un temple bouddhiste.
                 </p>
                 <div class="mt-4 text-center">
                     <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
@@ -108,10 +108,10 @@
             </div>
 
             <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Pré-MSc à Epitech</h2>
-                <p class="mt-1 text-sm text-[#f9e4b7] text-center">2025</p>
+                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Pré-MSc à Epitech — Rennes</h2>
+                <p class="mt-1 text-sm text-[#f9e4b7] text-center">2025-2028</p>
                 <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Préparation intensive au Master of Science, approfondissement des compétences techniques et logiques.
+                Année préparatoire au Master of Science, spécialité IA et Cybersécurité.
                 </p>
                 <div class="mt-4 text-center">
                     <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
@@ -121,10 +121,10 @@
             </div>
 
             <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition-transform duration-300 ease-out">
-                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Petits boulots</h2>
+                <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Expériences professionnelles</h2>
                 <p class="mt-1 text-sm text-[#f9e4b7] text-center">Divers</p>
                 <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">
-                Expériences variées dans le service, l’animation et le soutien scolaire.
+                Du service à la logistique.
                 </p>
                 <div class="mt-4 text-center">
                     <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition-colors duration-300">
@@ -147,46 +147,7 @@
         <p class = "text-center text-xs">© 2025 by Augustin JOUAN</p>
     </footer>
 
-
-    <!-- js pour l'apparition du form -->
-    <script>
-        const btn = document.getElementById("btn");
-        const form = document.getElementById("form");
-        btn.addEventListener("click", () => {
-            form.classList.toggle('translate-x-[calc(100%+5rem)]');
-
-        })
-    </script>
-
-    <!-- js pour le "en savoir plus" de mes card bio -->
-
-    <script>
-    const buttons = document.querySelectorAll('.expand-btn');
-    const cards = document.querySelectorAll('.card');
-
-    buttons.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            const card = cards[index];
-            const isExpanded = btn.textContent === "Retour";
-
-            if (!isExpanded) {
-                cards.forEach((c, i) => {
-                if (i !== index) {
-                    c.style.display = 'none';
-                }
-                });
-                card.classList.add('col-span-1', 'sm:col-span-2', 'lg:col-span-3');
-                btn.textContent = "Retour"; 
-            } else {
-                cards.forEach((c) => {
-                c.style.display = 'block'; 
-                c.classList.remove('col-span-1', 'sm:col-span-2', 'lg:col-span-3'); 
-                });
-                btn.textContent = "En savoir plus";
-            }
-        });
-    });
-    </script>
+    <script src = "script.js"></script>
 
 </body>
 
