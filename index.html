@@ -16,20 +16,20 @@
     <header class = "fixed top-0">
         <nav class = "flex my-2 items-center  rounded">
             <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#welcome">Bienvenue</a>
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#bio">Mon Parcour</a>
-            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#projects">Projects</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#bio">Mon Parcours</a>
+            <a class = "bg-[#A7C7E7] rounded m-2 p-2 bg-opacity-70" href = "#projects">Mes projets</a>
         </nav>
     </header>
 
     <main>
 
         <!-- boutons du cotés droit: form et mes liens -->
-        <section class = "flex flex-col h-screen w-20 justify-center items-center fixed right-0 rounded">
+        <section class = "flex flex-col h-screen w-20 justify-center items-center fixed right-0 rounded  mb-10">
             
-            <button id = "btn" class = "shadow-2xl flex flex-col h-1/3 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap bg-opacity-70">
-                <p class = "rotate-90 text-center">Contact Me !!</p>
+            <button id = "btn" class = "shadow-2xl flex flex-col h-1/2 w-2/3 bg-[#A7C7E7] items-center justify-center my-2 rounded whitespace-nowrap bg-opacity-70">
+                <p class = "rotate-90 text-center">Contactez-moi</p>
             </button> 
-            <button class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-2/3 items-center justify-center my-2 bg-opacity-70"> 
+            <button class = "shadow-2xl w-2/3 bg-[#A7C7E7] rounded flex flex-row h-1/3 items-center justify-center my-2 bg-opacity-70"> 
                 <p class = "rotate-90">Links...</p>
             </button>
 
@@ -45,7 +45,7 @@
             <form action="mailto:augustin.jouan@epitech.eu" method="post" enctype="text/plain" class = " flex-1 overflow-auto relative flex flex-col w-full p-4 md:rounded-r bg-cover bg-center bg-[url('img/foretJour.png')] md:bg-none">
                 
                 <section class = "flex flex-row items-center mb-4">
-                    <h1 class = "text-center text-3xl">Please feel free to contact me! I will be happy to respond.</h1>
+                    <h1 class = "text-center text-3xl">N’hésitez pas à me contacter ! Je serai heureux de vous répondre.</h1>
                 </section>
 
                 <section class = "flex flex-col gap-4">
@@ -72,9 +72,17 @@
 
         <!-- photo de moi + hook -->
 
-        <section id = "welcome" class = "flex flex-row items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
-            <img class="rounded-full m-4" src="img/Picture_of_me.png" alt="forest" width="300px" height="300px">
-            <p class = "text-5xl text-center text-[#5b8065] m-4 w-1/2"> Welcome to the Portfolio of Augustin JOUAN</p>
+        <section id = "welcome" class = "flex flex-col md:flex-row items-center justify-center h-screen  bg-[#f9e4b7] w-screen ">
+            <div>
+                <img class="rounded-full mr-20 mt-20" src="img/Picture_of_me.png" alt="forest" width="300px" height="300px">
+            </div>
+            <div class = "mr-20">
+                <p class = "text-5xl text-center text-[#5b8065] m-4">Augustin JOUAN</p>
+                <p class = "text-3xl text-center text-[#5b8065] m-8 italic"> 
+                    Étudiant en Pré-MSc à Epitech, je transforme ma passion pour l’informatique en expertise concrète.<br>
+                    Mon objectif : apprendre, créer, et innover au cœur de votre entreprise.
+                </p>
+            </div>
         </section>
 
         <!--mon parcour-->
@@ -117,8 +125,7 @@
         </div>
 
         <div class="card p-4 m-4 rounded-xl border border-pink-100 shadow-md hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-out">
-            <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Expériences professionnelles</h2>
-            <p class="mt-1 text-sm text-[#f9e4b7] text-center">Divers</p>
+            <h2 class="mt-4 text-xl text-[#f9e4b7] text-center">Expériences professionnelles diverses</h2>
             <p class="mt-2 text-[#f9e4b7] text-center line-clamp-3">Du service à la logistique.</p>
             <div class="mt-4 text-center">
             <button class="expand-btn inline-block px-4 py-2 bg-pink-100/50 text-pink-400 rounded-lg hover:bg-pink-100/70 transition" data-target="jobs">
@@ -133,8 +140,10 @@
         <div id="big-licence" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
             <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Licence MIASHS — Université de Rennes</h2>
             <p class="text-[#f9e4b7] text-center leading-relaxed">
-            Études en mathématiques appliquées et sciences humaines et sociales, avec une forte composante informatique.<br>
-            Cours principaux : Python, R, Machine Learning, SQL, analyse, algèbre, probabilités, statistiques inférentielles et optimisation.
+            Ma licence MIASHS (Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales) m’a permis d’acquérir une solide base scientifique et technique.<br>
+            J’y ai appris à manier des langages de programmation tels que Python, R et SQL, tout en développant des compétences en analyse de données, modélisation et apprentissage automatique.<br>
+            Au-delà des compétences techniques, cette formation m’a appris à structurer ma pensée, raisonner logiquement et analyser des problèmes complexes en combinant rigueur mathématique et esprit critique.<br>
+            C’est aussi durant cette période que j’ai développé mon intérêt pour l’intelligence artificielle et la cybersécurité, domaines dans lesquels je souhaite me spécialiser en alternance.<br>
             </p>
             <div class="mt-6 text-center">
             <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="licence">
@@ -146,8 +155,10 @@
         <div id="big-irlande" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
             <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Séjour en Irlande</h2>
             <p class="text-[#f9e4b7] text-center leading-relaxed">
-            Immersion complète au sein d’un temple bouddhiste tibétain (Jampa Ling, Cavan).<br>
-            Bénévolat, vie communautaire et amélioration significative de l’anglais à l’oral comme à l’écrit.
+            Mon séjour de six mois en Irlande a été une expérience humaine marquante.<br>
+            En immersion totale dans un temple bouddhiste tibétain, j’ai participé à la vie communautaire en tant que bénévole, tout en améliorant considérablement mon anglais oral et écrit.<br>
+            Cette expérience m’a appris à m’adapter à des environnements multiculturels, à travailler en équipe dans un cadre international et à gérer mon autonomie loin de mes repères habituels.<br>
+            J’en ai tiré une grande maturité personnelle, une meilleure gestion du stress et un sens du collectif, des qualités essentielles dans le monde professionnel et pour évoluer efficacement en entreprise.<br>
             </p>
             <div class="mt-6 text-center">
             <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="irlande">
@@ -159,8 +170,10 @@
         <div id="big-epitech" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
             <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Pré-MSc à Epitech — Rennes</h2>
             <p class="text-[#f9e4b7] text-center leading-relaxed">
-            Année préparatoire au Master of Science (spécialité IA & Cybersécurité).<br>
-            Développement de compétences en algorithmique, sécurité et projets collaboratifs.
+            Intégré à la Pré-MSc d’Epitech, je me prépare à intégrer le Master of Science en Intelligence Artificielle et Cybersécurité.<br>
+            Cette formation met l’accent sur l’apprentissage par projet, la collaboration et la résolution de problèmes concrets.<br>
+            J’y renforce mes bases en programmation, en sécurité informatique et en architecture logicielle, tout en développant ma capacité à apprendre rapidement de nouvelles technologies.<br>
+            Epitech m’inculque une autonomie forte, une culture de la veille technologique et une logique d’innovation — des qualités directement applicables en alternance, où je souhaite m’impliquer dans des projets concrets et exigeants.<br>
             </p>
             <div class="mt-6 text-center">
             <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="epitech">
@@ -170,10 +183,12 @@
         </div>
 
         <div id="big-jobs" class="big-card hidden p-8 m-4 rounded-xl border shadow-lg transition-all duration-500 ease-out col-span-2">
-            <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Expériences professionnelles</h2>
+            <h2 class="text-2xl text-[#f9e4b7] font-semibold text-center mb-2">Expériences professionnelles diverses</h2>
             <p class="text-[#f9e4b7] text-center leading-relaxed">
-            J’ai travaillé dans divers environnements — hôtellerie, logistique, restauration, et grande distribution.<br>
-            Ces expériences m’ont apporté rigueur, autonomie et sens du service.
+            Mes différents emplois saisonniers et étudiants (voiturier dans un hôtel 5 étoiles, chauffeur-livreur, gestionnaire de stock, caissier, employé de rayon, intérimaire) m’ont permis de développer de nombreuses qualités humaines et professionnelles.<br>
+            J’y ai appris à travailler sous pression, à respecter les délais, à communiquer efficacement avec des clients et collègues, et à m’adapter à des environnements très variés.<br>
+            Ces expériences m’ont apporté un fort sens des responsabilités, une grande rigueur et une capacité à m’investir pleinement dans mon travail.<br>
+            Elles m’ont aussi donné le goût de l’effort et de la persévérance — des qualités que je mets aujourd’hui au service de ma reconversion vers l’informatique et de ma future alternance.<br>
             </p>
             <div class="mt-6 text-center">
             <button class="back-btn inline-block px-6 py-2 bg-pink-100/80 text-pink-400 rounded-lg hover:bg-pink-200 transition" data-target="jobs">
